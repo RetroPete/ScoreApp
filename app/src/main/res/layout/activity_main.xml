@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F44336">
+    android:background="@drawable/basketball_180">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,14 +13,12 @@
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#795548"
             android:orientation="horizontal">
 
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#9C27B0"
                 android:orientation="vertical"
                 tools:context="MainActivity">
 
@@ -28,7 +26,6 @@
                     android:id="@+id/team_a_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#CDDC39"
                     android:gravity="center_horizontal"
                     android:hint="@string/team_name"
                     android:inputType="textCapWords"
@@ -41,7 +38,6 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/team_a_name"
                     android:layout_margin="20dp"
-                    android:background="#3F51B5"
                     android:gravity="center"
                     android:text="@string/team_score"
                     android:textColor="#000000"
@@ -53,10 +49,12 @@
                     android:layout_height="50dp"
                     android:layout_below="@+id/team_a_score"
                     android:layout_margin="16dp"
-                    android:background="#3F51B5"
+                    android:background="@drawable/basketball_icon"
                     android:gravity="center"
                     android:text="@string/team_score"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/btn1a"
@@ -64,9 +62,9 @@
                     android:layout_height="50dp"
                     android:layout_below="@id/team_a_score"
                     android:layout_margin="16dp"
-                    android:layout_toRightOf="@id/pt1a"
                     android:layout_toEndOf="@id/pt1a"
-                    android:background="#E91E63"
+                    android:layout_toRightOf="@id/pt1a"
+                    android:background="@color/colorPrimary"
                     android:onClick="addThreeForTeamA"
                     android:text="@string/three_points" />
 
@@ -76,10 +74,12 @@
                     android:layout_height="50dp"
                     android:layout_below="@+id/pt1a"
                     android:layout_margin="16dp"
-                    android:background="#3F51B5"
+                    android:background="@drawable/basketball_icon"
                     android:gravity="center"
                     android:text="@string/team_score"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/btn2a"
@@ -87,9 +87,9 @@
                     android:layout_height="50dp"
                     android:layout_below="@id/btn1a"
                     android:layout_margin="16dp"
-                    android:layout_toRightOf="@+id/pt2a"
                     android:layout_toEndOf="@+id/pt2a"
-                    android:background="#E91E63"
+                    android:layout_toRightOf="@+id/pt2a"
+                    android:background="@color/colorPrimary"
                     android:onClick="addTwoForTeamA"
                     android:text="@string/two_points" />
 
@@ -99,10 +99,12 @@
                     android:layout_height="50dp"
                     android:layout_below="@+id/pt2a"
                     android:layout_margin="16dp"
-                    android:background="#3F51B5"
+                    android:background="@drawable/basketball_icon"
                     android:gravity="center"
                     android:text="@string/team_score"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/btn3a"
@@ -110,9 +112,9 @@
                     android:layout_height="50dp"
                     android:layout_below="@id/btn2a"
                     android:layout_margin="16dp"
-                    android:layout_toRightOf="@+id/pt3a"
                     android:layout_toEndOf="@+id/pt3a"
-                    android:background="#E91E63"
+                    android:layout_toRightOf="@+id/pt3a"
+                    android:background="@color/colorPrimary"
                     android:onClick="addOneForTeamA"
                     android:text="@string/one_point" />
 
@@ -128,7 +130,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#9C27B0"
                 android:orientation="vertical"
                 tools:context="MainActivity">
 
@@ -136,7 +137,6 @@
                     android:id="@+id/team_b_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#CDDC39"
                     android:gravity="center_horizontal"
                     android:hint="@string/team_name"
                     android:inputType="textCapWords"
@@ -149,7 +149,6 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/team_b_name"
                     android:layout_margin="20dp"
-                    android:background="#3F51B5"
                     android:gravity="center"
                     android:text="@string/team_score"
                     android:textColor="#000000"
@@ -161,10 +160,12 @@
                     android:layout_height="50dp"
                     android:layout_below="@+id/team_b_score"
                     android:layout_margin="16dp"
-                    android:background="#3F51B5"
+                    android:background="@drawable/basketball_icon"
                     android:gravity="center"
                     android:text="@string/team_score"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/btn1b"
@@ -172,9 +173,9 @@
                     android:layout_height="50dp"
                     android:layout_below="@id/team_b_score"
                     android:layout_margin="16dp"
-                    android:layout_toRightOf="@id/pt1b"
                     android:layout_toEndOf="@id/pt1b"
-                    android:background="#E91E63"
+                    android:layout_toRightOf="@id/pt1b"
+                    android:background="@color/colorPrimary"
                     android:onClick="addThreeForTeamB"
                     android:text="@string/three_points" />
 
@@ -184,10 +185,12 @@
                     android:layout_height="50dp"
                     android:layout_below="@+id/pt1b"
                     android:layout_margin="16dp"
-                    android:background="#3F51B5"
+                    android:background="@drawable/basketball_icon"
                     android:gravity="center"
                     android:text="@string/team_score"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/btn2b"
@@ -195,9 +198,9 @@
                     android:layout_height="50dp"
                     android:layout_below="@id/btn1b"
                     android:layout_margin="16dp"
-                    android:layout_toRightOf="@+id/pt2b"
                     android:layout_toEndOf="@+id/pt2b"
-                    android:background="#E91E63"
+                    android:layout_toRightOf="@+id/pt2b"
+                    android:background="@color/colorPrimary"
                     android:onClick="addTwoForTeamB"
                     android:text="@string/two_points" />
 
@@ -207,10 +210,12 @@
                     android:layout_height="50dp"
                     android:layout_below="@+id/pt2b"
                     android:layout_margin="16dp"
-                    android:background="#3F51B5"
+                    android:background="@drawable/basketball_icon"
                     android:gravity="center"
                     android:text="@string/team_score"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/btn3b"
@@ -218,9 +223,9 @@
                     android:layout_height="50dp"
                     android:layout_below="@id/btn2b"
                     android:layout_margin="16dp"
-                    android:layout_toRightOf="@+id/pt3b"
                     android:layout_toEndOf="@+id/pt3b"
-                    android:background="#E91E63"
+                    android:layout_toRightOf="@+id/pt3b"
+                    android:background="@color/colorPrimary"
                     android:onClick="addOneForTeamB"
                     android:text="@string/one_point" />
 
@@ -235,7 +240,7 @@
             android:layout_below="@+id/linearLayout"
             android:layout_centerHorizontal="true"
             android:layout_margin="50dp"
-            android:background="#4CAF50"
+            android:background="@drawable/basketball_icon_1"
             android:onClick="resetScore"
             android:text="@string/reset"
             android:textColor="@android:color/white" />
